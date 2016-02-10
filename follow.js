@@ -18,10 +18,12 @@ var pretty = function(e){
     ctx.stroke();
 }
 var refresh = function(){
-    ctx.clearRect(0,0,500,500);
+    ctx.clearRect(0,0,1024,768);
+    ctx.beginPath();
 }
 var kirkles = function(){
     
 }
-ctx.beginPath();
 c.addEventListener('click', pretty);
+var d = document.getElementById("fresh");
+d.addEventListener('click', refresh);
